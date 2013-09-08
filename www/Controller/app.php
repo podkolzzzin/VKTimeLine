@@ -13,7 +13,7 @@ class Controller_app extends Controller_base
     public function observables()
     {
         set_time_limit(300000);
-        /**@var $VK VK*/
+        /**@var $VK VK */
         $VK = unserialize(file_get_contents('vk'));
         $analyzer = new Analyzer($this->db, $VK);
 
@@ -23,7 +23,7 @@ class Controller_app extends Controller_base
     public function save()
     {
         $s = serialize($_SESSION['VK']);
-        file_put_contents('vk',$s);
+        file_put_contents('vk', $s);
     }
 
     public function load()
@@ -43,8 +43,9 @@ class Controller_app extends Controller_base
     public function finishlogin()
     {
         $_SESSION['VK'] = VK::login($_GET['code']);
+
         $s = serialize($_SESSION['VK']);
-        file_put_contents('vk',$s);
+        file_put_contents('vk', $s);
         header('Location: /app/observables');
     }
 

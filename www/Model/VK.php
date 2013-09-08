@@ -15,8 +15,6 @@ class VK
     {
         $this->token = $data['access_token'];
         $this->user = $data['user_id'];
-        echo $data['expires_in'];
-        exit;
     }
 
     public static function login($code)
