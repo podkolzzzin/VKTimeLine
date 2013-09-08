@@ -46,7 +46,9 @@ class Controller_app extends Controller_base
 
         $s = serialize($_SESSION['VK']);
         file_put_contents('vk', $s);
-        header('Location: /app/observables');
+        echo "login is successful<br />";
+        echo "<a href='/app/observables'>Go to this link to load the list of friends</a>";
+        //header('Location: /app/observables');
     }
 
     public function login()
