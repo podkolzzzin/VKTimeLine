@@ -14,7 +14,7 @@ class App
     const ID = 3865592;
     const SECRET = 'vSUlIQxUYWYYtP4fpvS2';
     const SCOPE = 2;
-    const REDIRECT = "http://vk.info/app/finishlogin&response_type=code&v=5.0&display=page";
+    const REDIRECT = "http://vktimeline.com/app/finishlogin&response_type=code&v=5.0&display=page";
     const AUTH_LINK = AUTH_LINK;
     const LOGIN_PATTERN = LOGIN_PATTERN;
     const API_LINK = API_LINK;
